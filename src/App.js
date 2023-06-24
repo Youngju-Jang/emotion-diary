@@ -57,6 +57,12 @@ const dummyData = [
     content: "오늘의 일기 4번",
     date: 1687505550054,
   },
+  {
+    id: 5,
+    emotion: 5,
+    content: "오늘의 일기 5번",
+    date: 1687505550100,
+  },
 ];
 function App() {
   const [data, dispatch] = useReducer(reducer, dummyData);
