@@ -15,7 +15,14 @@ const Home = () => {
     if (diaryList.length >= 1) {
       // 월 변경시 해당 월 리스트만 나오도록
       const firstDay = new Date(curDate.getFullYear(), curDate.getMonth(), 1).getTime();
-      const lastDay = new Date(curDate.getFullYear(), curDate.getMonth() + 1, 0).getTime();
+      const lastDay = new Date(
+        curDate.getFullYear(),
+        curDate.getMonth() + 1,
+        0,
+        23,
+        59,
+        59
+      ).getTime();
       console.log(firstDay);
       console.log(lastDay);
       diaryList.map((it) => console.log(it[0]));
