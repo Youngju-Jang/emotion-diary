@@ -305,6 +305,7 @@ header button {
 }
 .DiaryPage .emotion_descript {
   font-size: 25px;
+  color: white;
 }
 .DiaryPage .diary_img_wrapper_1 {
   background-color: #64c964;
@@ -321,4 +322,21 @@ header button {
 }
 .DiaryPage .diary_img_wrapper_5 {
   background-color: #fd565f;
+}
+
+.DiaryPage .diary_content_wrapper {
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 5px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.DiaryPage .diary_content_wrapper p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Yeon Sung";
+  font-weight: 400;
+  line-height: 2.5;
 }
